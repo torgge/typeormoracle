@@ -1,0 +1,24 @@
+{
+   "type": "oracle",
+   "host": "172.27.10.173",
+   "username": "agritrade",
+   "password": "superagritrade",
+   "port": 1521,
+   "sid": "xe",
+   "synchronize": true,
+   "logging": false,
+   "entities": [
+      "src/entity/**/*.ts"
+   ],
+   "migrations": [
+      "src/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "src/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+   }
+}
